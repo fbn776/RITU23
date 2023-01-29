@@ -1,0 +1,17 @@
+/**Style for <SvgHamburger/>**/
+.svg-burger-bar path {
+	transition: transform 0.2s;
+	transform-origin: center;
+}
+
+.svg-burger-bar.clicked path:nth-child(1) {
+	transform: translateY(25%) translateX(-25%) rotate(45deg);
+}
+
+.svg-burger-bar.clicked path:nth-child(3) {
+	transform: translateY(-25%) translateX(-25%) rotate(-45deg)
+}
+
+.svg-burger-bar.clicked path:nth-child(2) {
+	transform: scale(0);
+}
